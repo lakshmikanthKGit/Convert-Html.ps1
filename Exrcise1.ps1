@@ -7,3 +7,4 @@ $a=get-service|?{$_.Status -eq "running"}|Select Name,Status|ConvertTo-Html -Fra
 $b=get-service|?{$_.Status -ne "running"}|Select Name,Status|ConvertTo-Html -Fragment
 ConvertTo-Html -Body "$a $B" -Head "$C"|Out-File C:\temp\test1.html
 Invoke-Item -Path C:\temp\test1.html
+#jygrfuyf
